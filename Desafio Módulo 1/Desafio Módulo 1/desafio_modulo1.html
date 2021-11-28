@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/desafio_modulo1.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="main-nav">
+      <div class="header-content max-content">
+        <div class="logo nav">
+          <h1>Banco Fictício</h1>
+        </div>
+        <div class="nav">
+          <nav>Desafio 1 - Bootcamp Desenvolvedor Tech PAN</nav>
+        </div>
+      </div>
+    </header>
+    <div id="erros"></div>
+    <div class="main_bg max-content">
+      <div>
+        <h2 class="options">Options</h2>
+        <label class="sort_by"
+          >Sort by
+          <select id="select_roles" value="">
+            <option value="name_asc">Name (ascending)</option>
+            <option value="name_desc">Name (descending)</option>
+            <option value="salary_asc">Salary (ascending)</option>
+            <option value="salary_desc">Salary (descending)</option>
+          </select></label
+        >
+        <fieldset id="roles_id">
+          <legend>Filter by roles</legend>
+        </fieldset>
+      </div>
+      <div class="div_employees">
+        <h2>Employees <span class="employees"></span></h2>
+        <div class="grid_tabelas">
+          <div>
+            <h3>ID</h3>
+            <ul id="id"></ul>
+          </div>
+          <div>
+            <h3>Name</h3>
+            <ul id="named"></ul>
+          </div>
+          <div>
+            <h3>Role</h3>
+            <ul id="role"></ul>
+          </div>
+          <div>
+            <h3>Salary</h3>
+            <ul id="salary"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/desafio_modulo1.js"></script>
+  </body>
+</html>

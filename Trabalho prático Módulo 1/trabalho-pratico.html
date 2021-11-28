@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head lang="pt-BR">
+  <meta charset="utf-8" />
+  <title>Trabalho Prático Módulo 1</title>
+  <link rel="stylesheet" href="./css/trabalho-pratico.css" />
+</head>
+<body>
+  <header class="main-bg">
+    <div class="header-content max-content">
+      <div class="logo nav">
+        <h1>Banco Fictício</h1>
+      </div>
+      <div class="nav">
+        <nav>Trabalho Prático 1 - Bootcamp Desenvolvedor Tech PAN</nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="main-content max-content">
+    <div class="grid">
+      <div class="grid1">
+        <h2>Simulação de Financiamento</h2>
+      </div>
+
+      <div class="grid2">
+        <div>
+          <label
+            >Valor<input type="number" name="valor-total" id="valor_total"
+          /></label>
+        </div>
+        <div>
+          <label
+            >Prazo (anos)<input type="number" name="prazo-anos" id="prazo_anos"
+          /></label>
+        </div>
+        <div>
+          <label
+            >Juros ao ano<input
+              type="number"
+              name="juros-anual"
+              id="juros_anual"
+          /></label>
+        </div>
+        <div>
+          <button onclick="simular()" class="simula">Simular</button>
+        </div>
+      </div>
+
+      <div class="grid1">
+        <h3>Resultado</h3>
+      </div>
+      <div class="grid2">
+        <div>
+          <h4>Prazo (meses)</h4>
+          <p id="res_prazo_meses"></p>
+        </div>
+        <div>
+          <h4>Juros ao mês</h4>
+          <p id="res_juros_mes"></p>
+        </div>
+        <div>
+          <h4>Juros acumulados</h4>
+          <p id="res_juros_acm"></p>
+        </div>
+      </div>
+
+      <div class="grid3">
+        <div>
+          <h4>Prestação</h4>
+          <table>
+            <tbody id="prestacao"></tbody>
+          </table>
+        </div>
+        <div>
+          <h4>Amortização</h4>
+          <table>
+            <tbody id="amortizacao"></tbody>
+          </table>
+        </div>
+        <div>
+          <h4>Juros</h4>
+          <table>
+            <tbody id="juros_prestacao"></tbody>
+          </table>
+        </div>
+        <div>
+          <h4>Total</h4>
+          <table>
+            <tbody id="total_prestacao"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer></footer>
+  <script src="./js/trabalho-pratico.js"></script>
+</body>
